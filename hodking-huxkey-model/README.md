@@ -4,7 +4,7 @@ This is a study on the Hodking-Huxley model (HHM) for the action potential. The 
 
 For the first set of equations, we employ Euler's method for differential equations solving. For the latter, we aimed at developing the set of equations.
 
-## Modelling ionic channels
+## Modelling the potential across the cell membrane
 
 The cell membrane is typically composed of a lipidic and proteic structure that insulates the intra from the extracellular medium. Additionally, some specific types of protein can transverse the membrane structure, forming conduction channels from ions to flow between these two mediuns (ionic channels). Different concentrations of ions between the intra and extracellular environments causes an eletric potential difference to form across the cell membrane, yield ions flows throughout the membrane. The lipidic structure can be modelled as a capacitor, whereas the ionic channels can be regarded as resistors when using the equivalent circuit model for the cell membrane.
 
@@ -22,3 +22,5 @@ in which:
 In HHM, the sodium and potassium conductances are potential-dependant, whereas $g_{l}$ is considered to be constant. $g_{Na}$ and $g_{K}$ vary according to "gate particles" that control that ion's channel permeability. Thus, both conductances can be written as products between a function $f = f(V,t)$, whose values fall within [0,1], and a maximum conduction; that is:
 
 $g_{i} = f_{i}(V,t)g_{i}^{max}$.
+
+## Modelling the ionic channels
