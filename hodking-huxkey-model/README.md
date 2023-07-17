@@ -24,3 +24,8 @@ In HHM, the sodium and potassium conductances are potential-dependant, whereas $
 $g_{i} = f_{i}(V,t)g_{i}^{max}$.
 
 ## Modelling the ionic channels
+
+Let us assume that ionic channels can be characterized by two states: 'open' (O) and 'closed' (C). Conformational changes in the ionic channels caused by electrical field variations can yield transition from one state to the other. Such transitions occur on rates that are, hence, dependant upon the membrane's potential. This process is illustrated below by Fig. 1, in which 'a' and 'b' denote the transition rates from 'O' to 'C', and from 'C' to 'O', respectively.
+
+![Ionic channel transition rates](/images/ionic-channel-probabilities.png)
+*Figure 1. Ionic channel transition rates illustration.
