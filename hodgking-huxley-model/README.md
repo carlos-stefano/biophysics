@@ -27,5 +27,18 @@ $g_{i} = f_{i}(V,t)g_{i}^{max}$.
 
 Let us assume that ionic channels can be characterized by two states: 'open' (O) and 'closed' (C). Conformational changes in the ionic channels caused by electrical field variations can yield transition from one state to the other. Such transitions occur on rates that are, hence, dependant upon the membrane's potential. This process is illustrated below by Fig. 1, in which 'a' and 'b' denote the transition rates from 'O' to 'C', and from 'C' to 'O', respectively.
 
-![Ionic channel transition rates](/images/ionic-channel-probabilities.png)
+![Ionic channel transition rates](/hodgking-huxley-model/images/ionic-channel-probabilities.png)
+
 *Figure 1. Ionic channel transition rates illustration.*
+
+Now, assuming that the ionic channels only transition between these two states, let $p$ be the probability of a channel being open; then, the probability of it being closed will be of $1 - p$. Let $N_{O}$ and $N_{C}$ be the number of channels in each of the aforementioned states. Then, the temporal evolution for the number of channels, for each small variation $dt$, will be given by:
+
+$\frac{dN_{O}}{dt} = bN_{C} - aN_{O}$;
+
+$\frac{dN_{C}}{dt} = aN_{O} - bN_{C}$.
+
+Let $N \coloneqq N_{O} + N_{C}$ be the total number of channels. Then, we can rewrite the above equations as:
+
+$\frac{N_{O}}{N} = b(1-p)$;
+
+$\frac{N_{C}}{N} = ap$.
